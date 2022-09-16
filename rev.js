@@ -32,10 +32,13 @@ const result = parHours(10800)
 const init = parseInt(result)
 // console.log(init);
 
-const friendName = ["ramij","rahim","hasan","tanbir"]
-const p = [25,78,363,458,47]
+const friendName = ["ramij","rahim","rahim","hasan","hasan","tanbir","tanbir"]
+const p = [25,78,363,458,47,25,47]
+const unic = []
 for(let i = 0; i < p.length; i++){
     let lem = p[i]
-    lem += 10;
-    console.log(lem);
+    if (unic.indexOf(lem) === -1){
+        unic.push(lem)
+    }
 }
+console.log(unic);
