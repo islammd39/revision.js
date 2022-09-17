@@ -53,3 +53,20 @@ const myVapa = new Vapa(10, 4)
 const hisPitha = new Vapa(15, 8)
 console.log(myVapa);
 console.log(hisPitha);
+
+const latter =['a','b','c','c','d','d','e','f','g','h','i','j','k','f','g','h','i','j','k','l','m','n','o','p','q','r','s',
+'t','u','v','w','x','y','z']
+
+const ele = (num) =>{
+    const plate = []
+    for(let i = 0; i < num.length; i++){
+        const index = num[i];
+        if(plate.includes(index) === false){
+            plate.push(index)
+        }
+        // console.log(plate);
+    }
+    return plate;
+}
+const r = ele(latter)
+console.log(r);
