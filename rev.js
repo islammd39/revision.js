@@ -70,3 +70,4 @@ const ele = (num) =>{
 }
 const r = ele(latter)
 console.log(r);
+
