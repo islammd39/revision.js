@@ -32,13 +32,24 @@ const result = parHours(10800)
 const init = parseInt(result)
 // console.log(init);
 
-const friendName = ["ramij","rahim","rahim","hasan","hasan","tanbir","tanbir"]
-const p = [25,78,363,458,47,25,47]
+const friendName = ["ramij", "rahim", "rahim", "hasan", "hasan", "tanbir", "tanbir"]
+const p = [25, 78, 363, 458, 47, 25, 47]
 const unic = []
-for(let i = 0; i < p.length; i++){
+for (let i = 0; i < p.length; i++) {
     let lem = p[i]
-    if (unic.indexOf(lem) === -1){
+    if (unic.indexOf(lem) === -1) {
         unic.push(lem)
     }
 }
 console.log(unic);
+
+class Vapa {
+    constructor(narikal, gurTukra) {
+        this.narikal = narikal;
+        this.gurTukra = gurTukra;
+    }
+};
+const myVapa = new Vapa(10, 4)
+const hisPitha = new Vapa(15, 8)
+console.log(myVapa);
+console.log(hisPitha);
